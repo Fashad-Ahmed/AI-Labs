@@ -1,0 +1,12 @@
+﻿student(ahmed).
+student(fashad).
+student(siddique).
+student(fasih).
+student(urRehman).
+student(ansari).
+teacher(waseem,umer).
+student(umer,waseem).
+labAttendant(lab1,qasim).
+labNumber(qasim,lab1).
+labAttendant(lab2,saleem).
+labNumber(saleem,lab2).

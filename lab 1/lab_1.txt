@@ -1,0 +1,95 @@
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- write('Hello World!').
+Hello World!
+true.
+
+2 ?- Write('Hello World!').
+ERROR: Syntax error: Operator expected
+ERROR: Writ
+ERROR: ** here **
+ERROR: e('Hello World!') . 
+2 ?- write('Hello World!').
+Hello World!
+true.
+
+3 ?- student(ahmed).
+ERROR: toplevel: Undefined procedure: student/1 (DWIM could not correct goal)
+4 ?- [test].
+true.
+
+5 ?- student(ahmed).
+true.
+
+6 ?- student(X).
+X = ahmed.
+
+7 ?- [test].
+true.
+
+8 ?- student(X).
+X = ahmed .
+
+9 ?- [test].
+true.
+
+10 ?- student(X).
+X = ahmed .
+
+11 ?- student(X).
+X = ahmed ;
+X = fashad ;
+X = siddique ;
+X = fasih ;
+X = urRehman ;
+X = ansari.
+
+12 ?- [test].
+true.
+
+13 ?- [test].
+true.
+
+14 ?- teacher(X,umer).
+X = waseem.
+
+15 ?- student(X,waseem).
+X = umer.
+
+16 ?- [test].
+true.
+
+17 ?- labAttendant(X,qasim).
+X = lab1.
+
+18 ?- labNumber(X,lab1).
+X = qasim.
+
+19 ?- labAttendant(X,saleem).
+false.
+
+20 ?- [test].
+Warning: c:/users/lab-4/desktop/ai ex/test.pl:11:
+        Clauses of labAttendant/2 are not together in the source-file
+          Earlier definition at c:/users/lab-4/desktop/ai ex/test.pl:9
+          Current predicate: labNumber/2
+          Use :- discontiguous labAttendant/2. to suppress this message
+Warning: c:/users/lab-4/desktop/ai ex/test.pl:12:
+        Clauses of labNumber/2 are not together in the source-file
+          Earlier definition at c:/users/lab-4/desktop/ai ex/test.pl:10
+          Current predicate: labAttendant/2
+          Use :- discontiguous labNumber/2. to suppress this message
+true.
+
+21 ?- labAttendant(X,saleem).
+X = lab2.
+
+22 ?- labNumber(X,lab2).
+X = saleem.
+
+23 ?- 
